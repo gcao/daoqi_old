@@ -1,0 +1,117 @@
+/*
+Menu related selectors
+*/
+.jsdomenudiv {
+	
+	background: url(/images/jsdomenubar/office_xp_menu_left.png) #FFFFFF repeat-y;
+	border: 1px solid #8A867A;
+	cursor: default;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	position: absolute; /* Do not alter this line! */
+	visibility: hidden;
+	z-index: 10;
+}
+
+.jsdomenuitem {
+	background: transparent;
+	border: none;
+	color: #000000;
+	font-family: Tahoma, Helvetica, sans, Arial, sans-serif;
+	font-size: 12px;
+	padding: 3px 15px 3px 30px;
+	position: relative; /* Do not alter this line! */
+}
+
+.jsdomenuitemover {
+	background-color: #C1D2EE;
+	border: 1px solid #316AC5;
+	color: #000000;
+	font-family: Tahoma, Helvetica, sans, Arial, sans-serif;
+	font-size: 12px;
+	margin-left: 1px;
+	margin-right: 1px;
+	padding: 2px 15px 2px 28px;
+	position: relative; /* Do not alter this line! */
+}
+
+.jsdomenuarrow {
+	background: url(/images/jsdomenubar/office_xp_arrow.png) no-repeat;
+	height: 7px;
+	position: absolute; /* Do not alter this line! */
+	right: 8px;
+	width: 4px;
+}
+
+.jsdomenuarrowover {
+	background: url(/images/jsdomenubar/office_xp_arrow_o.png) no-repeat;
+	height: 7px;
+	position: absolute; /* Do not alter this line! */
+	right: 8px;
+	width: 4px;
+}
+
+.jsdomenusep {
+	padding-left: 28px;
+}
+
+.jsdomenusep hr {
+}
+
+/*
+Menu bar related selectors
+*/
+.jsdomenubardiv {
+	
+	background: url(/images/jsdomenubar/office_xp_divider.png) #EFEFEF no-repeat;
+	border: 1px outset gray;
+   cursor: default;
+	padding: 3px 1px 3px 1px;
+   position: absolute; /* Do not alter this line! */
+	visibility: visible;
+}
+
+.jsdomenubardragdiv {
+	cursor: move;
+	display: inline;
+	font-family: Tahoma, Helvetica, sans, Arial, sans-serif;
+	font-size: 12px;
+	padding: 2px 5px 2px 5px;
+	position: relative; /* Do not alter this line! */
+	visibility: hidden;
+	width: 9px;
+}
+
+.jsdomenubaritem {
+	background-color: #EFEFEF;
+	border: none;
+	color: #000000;
+	display: inline;
+	font-family: Tahoma, Helvetica, sans, Arial, sans-serif;
+	font-size: 12px;
+	padding: 2px 10px 2px 24px;
+   position: relative; /* Do not alter this line! */
+}
+
+.jsdomenubaritemover {
+	background-color: #C1D2EE;
+	border: 1px solid #316AC5;
+	color: #000000;
+	display: inline;
+	font-family: Tahoma, Helvetica, sans, Arial, sans-serif;
+	font-size: 12px;
+   padding: 2px 9px 2px 23px;
+	position: relative; /* Do not alter this line! */
+}
+
+.jsdomenubaritemclick {
+	background-color: #C1D2EE;
+	border: 1px solid #8A867A;
+	color: #FFFFFF;
+	display: inline;
+	font-family: Tahoma, Helvetica, sans, Arial, sans-serif;
+	font-size: 12px;
+   font-weight: italic;
+   padding: 2px 9px 2px 23px;
+	position: relative; /* Do not alter this line! */
+}

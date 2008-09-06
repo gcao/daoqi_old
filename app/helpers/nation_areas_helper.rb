@@ -1,0 +1,2 @@
+module NationAreasHelper
+end

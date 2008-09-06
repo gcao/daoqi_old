@@ -1,0 +1,42 @@
+.app-header{
+  padding:0px;
+  width:100%;
+  background-color:#E6F2FF;    
+}
+
+.app-header .even{
+  background-color: #B9DCFF;
+}
+
+.app-header .odd {
+  background-color: #E6F2FF;
+}
+
+.app-header table{
+  text-align:center;
+  background-color:#E6F2FF
+}
+
+.app-header tr td{
+  padding:2px 8px 3px 8px; 
+}
+
+/* menu START */
+#container {
+    width:100%;
+    border:3px solid #c3daf9;
+}
+
+.calendar {
+    background-image:url(/extjs/resources/images/default/shared/calendar.gif) !important;
+}
+
+.menu-title{
+    background: #ebeadb url(/extjs/resources/images/default/grid/grid3-hrow.gif) repeat-x;
+    border-bottom:1px solid #99bbe8;
+    color:#15428b;
+    font:bold 10px tahoma,arial,verdana,sans-serif;
+    display:block;
+    padding:3px;
+}
+/* menu END */

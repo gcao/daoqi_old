@@ -1,0 +1,25 @@
+<div id="tournament-tree" style="padding:20px;width:120px"></div>
+<% javascript_tag do -%>
+  Ext.onReady(function(){
+    // create initial root node
+    root = new Ext.tree.AsyncTreeNode({
+      text: 'Invisible Root',
+      id:'0'
+    });
+    // create the tree
+    new Ext.tree.TreePanel({
+      loader: new Ext.tree.TreeLoader({
+        url:'/tournament/tree',
+        requestMethod:'GET',
+        baseParams:{format:'json'}
+      }),
+      renderTo:'tournament-tree',
+      root: root,
+      rootVisible:false
+    });
+    // expand invisible root node to trigger load
+    // of the first level of actual data
+    root.expand();
+  });
+<% end -%>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title> <%= "Banking - RTB" %>  </title>
+    <link href="/stylesheets/default.css" media="screen" rel="stylesheet" type="text/css"/>
+    <%= stylesheet_link_tag "/extjs/resources/css/ext-all.css" %>
+    <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag "/extjs/adapter/prototype/ext-prototype-adapter.js" %>
+    <%= javascript_include_tag "/extjs/ext-all.js" %>
+    <%= calendar_date_select_includes "blue" %>
+    <%= active_scaffold_includes %></head>
+  <body>
+    <script language="JavaScript">
+        Ext.onReady(function(){
+            Ext.QuickTips.init();
+
+            var tb = new Ext.Toolbar();
+            tb.render("toolbar");
+            tb.add({text: "Tourment", handler: function(){window.location.href = "/tournament"}},
+                {text: "Player", handler: function(){window.location.href = "/player"}},
+                {text: "Game", handler: function(){window.location.href = "/game"}}
+            );
+        });
+    </script>
+    <div id="container" align="right">
+      <div id="toolbar"></div>
+    </div>
+    <%= yield :layout %>
+  </body>
+</html>
