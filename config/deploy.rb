@@ -1,5 +1,6 @@
 set :application, "daoqi"
 set :repository,  "git@github.com:gcao/daoqi.git"
+set :runner, "gcao"
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
