@@ -18,9 +18,9 @@
         var tb = new Ext.Toolbar();
         tb.render("toolbar");
         tb.add(
-	        {text: "Tourment", handler: function(){window.location.href = "/tournament"}},
-          {text: "Player", handler: function(){window.location.href = "/player"}},
-          {text: "Game", handler: function(){window.location.href = "/game"}}
+	        {text: "Tourment", handler: function(){window.location.href = "<%= url_for(:controller => 'tournaments') %>"}},
+          {text: "Player", handler: function(){window.location.href = "<%= url_for(:controller => 'players') %>"}},
+          {text: "Game", handler: function(){window.location.href = "<%= url_for(:controller => 'games') %>"}}
         );
       });
     </script>
